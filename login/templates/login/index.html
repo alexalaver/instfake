@@ -23,7 +23,7 @@
                   </div><!-- Header end -->
                   <div class="form-wrap">
                     <form class="form" method="post" action="">
-                      {% csrf_token %}
+                      {% csrf_protect %}
                       <div class="input-box">
                         {{ form.logins }}
                       </div>
