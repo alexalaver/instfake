@@ -373,3 +373,17 @@
 	}
 
   }
+
+.error {
+	height: 36px;
+	border: 1px solid #efefef;
+	border-radius: 3px;
+	width:100%;
+	font-size:12px;
+	margin: 0;
+	padding: 9px 0 7px 8px;
+	outline: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #ff0000;
+}
